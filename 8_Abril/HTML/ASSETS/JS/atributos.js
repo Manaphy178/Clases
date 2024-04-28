@@ -10,4 +10,4 @@ console.log(h1.getAttribute("id"));
 h1.setAttribute("id", "Nuevo valor desde el JS");
 console.log(h1.getAttribute("id"));
 
-document.title = "En terminos de reproduccion Vaporeon es el mas compatible"
+document.title = "En terminos de reproduccion Vaporeon es el mas compatible";

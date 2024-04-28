@@ -1,11 +1,11 @@
 // // Primera forma decambiar estilos, NO ES la mejor forma
 // const heading = document.querySelector("h1");
-// //console.log(heading.textContent)
+//console.log(heading.textContent)
 
 // heading.style.color="#ae55ff";
 // heading.style.backgroundColor = "#d0d0d0"
 
-// // Segunda forma, con element.cssText, TAMPOCO es la mejor forma
+// Segunda forma, con element.cssText, TAMPOCO es la mejor forma
 heading.style.cssText = "background-color:#34deaa; padding:2rem;";
 
 // FORMA MAS UTILIZADA
