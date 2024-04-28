@@ -1,7 +1,7 @@
-// const board = document.querySelector(".board");
+const board = document.querySelector(".board");
 
 // // createElement para crear objetos en el DOM
-// const container = document.createElement("div");
+const container = document.createElement("div");
 const item1 = document.createElement("p");
 const item2 = document.createElement("p");
 
@@ -13,8 +13,8 @@ container.append(item1, item2);
 
 board.append(container);
 
-const board = document.querySelector(".board");
-const container = document.createElement("div");
+// const board = document.querySelector(".board");
+// const container = document.createElement("div");
 const items = ["Macarrones", "Arepas", "Migas"];
 
 items.forEach((item) => {
