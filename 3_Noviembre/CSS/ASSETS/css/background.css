@@ -1,0 +1,47 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  /* Guia para que nos sirva de referencial la cual vamos a comentarla una vez que no la necesitemos */
+  /* border: 1px solid red; */
+
+  /* Esto es de una practica del proximo dia */
+  /* width: 50%;
+  margin: 0 auto; */
+
+  /* Ponemos la imagen de fondo */
+  background-image: url(../img/bosque.jpg);
+
+  /* Utilizamos padding para darle tamaño al backgroud */
+  padding: 10rem 0; /*La imagen se esta repitiendo si solo pones esto. El 0 de padding es para los lados*/
+
+  /* No se repita la imagen (deja un espacio en blanco */
+  background-repeat: no-repeat;
+
+  /* Con esto la imagen se va ajustando al ancho, si hacemos que la ventana se haga mas pequeña el backgroud se ajusta como tal */
+  background-size: cover;
+
+  /* La imagen se seguira estirando pero se posiciona en el centro, similar a un centerCrop de Android */
+  background-position: center;
+
+  /* En caso de que no cargue la imagen le ponemos un color de fondo */
+  background-color: #315201;
+
+  /* Ponemos el h1 en el centro */
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  /* Para poner todo el h1 en mayusculas */
+  text-transform: uppercase;
+  background-color: #808080a2;
+  /* Con display inline no ocupa todo lo ancho */
+  display: inline;
+  padding: 1rem;
+}

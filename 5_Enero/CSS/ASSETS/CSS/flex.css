@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  padding: 2rem;
+}
+.box {
+  background-color: #404040;
+  min-height: 25rem;
+  /* height: 10rem; */
+
+  /* comenzamos a flexear */
+  display: flex;
+
+  /* Direccion del flex 
+  Por defecto la direccion es row, o sea en fila*/
+  flex-direction: row;
+
+  /* Espacios entre hijos/elementos */
+  gap: 1rem;
+
+  /* Alinear respecto al eje principal
+  Por defecto es flex-start */
+  justify-content: space-between;
+
+  /* Alinear respecto al eje secundario */
+  align-items: center;
+
+  /* Envolver, esto hace que el contenido se ajuste segun el contenido de la pagina 
+  o de la pantalla de los dispositivos */
+  flex-wrap: wrap;
+}
+.item {
+  background-color: #0080ff;
+  border: 1px solid #262626;
+  padding: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.item:first-child {
+  align-self: flex-end;
+  order: 1;
+  /* Para hacer el order bien es necesario hacer que todos los elementos tengan
+  el orden */
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #404040;
+  padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 6rem 1fr 6rem;
+  /* Creamos las templates areas */
+  /* Las templates areas se crean con comentarios de mas o menos como quieres que sea la estructura del grid con el nombre que les hayas puesto a los elementos */
+  grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "nav footer footer";
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+  background-color: lightblue;
+  padding: 1rem;
+  border: 1px solid blueviolet;
+}
+header {
+  /* Nombre del area del grid, todos los headers tendran ese nombre y estaran formados de la forma que esta puesta en el template area */
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}

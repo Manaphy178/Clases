@@ -1,0 +1,14 @@
+/* hijos */
+article > p {
+  text-align: center;
+}
+
+/* hermanos */
+h2 ~ p {
+  text-align: center;
+}
+
+/* descendientes */
+div p {
+  text-align: center;
+}

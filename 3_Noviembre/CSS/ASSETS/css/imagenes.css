@@ -1,0 +1,25 @@
+/* reset */
+* {
+  /* Esto siempre hay que ponerlo en todas las practicas y en todo */
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* root (no lo hemos utilizado en este ejemplo */
+/* :root{
+
+} */
+
+img {
+  /* Esto es para quitar el scroll horizontal 
+  Si hacemos mas pequeña la ventana, la imagen se ira haciendo mucho mas pequeña y se ajusta al contenido*/
+
+  max-width: 100%; /* Con esto hacemos que la imagen siempre sea el 100% si quitamos height se ira haciendo la imagen mas delgada*/
+  height: auto; /*Si añadimos esto con el width la imagen no se deformara al hacer la ventana mas pequeña*/
+  display: block;
+  /* Para centrar un elemento con display block se utiliza MARGIN: 0 AUTO; */
+  margin: 0 auto;
+}
+section {
+  text-align: center;
+}

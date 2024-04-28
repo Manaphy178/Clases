@@ -1,0 +1,11 @@
+/* De la practica 1 o 2 para darle algo a las letras */
+body {
+  font-family: "Noto Sans Linear B", sans-serif;
+}
+/* De la practica 3 de crear anclas */
+html {
+  scroll-behavior: smooth;
+}
+.nelson {
+  font-size: 1.5em;
+}

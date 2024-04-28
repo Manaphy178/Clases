@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+header p {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid black;
+  margin: 0 auto;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  /* min-height: 100vh; */
+  /* grid */
+  display: grid;
+  gap: 1rem;
+
+  /* creación de columnas y filas */
+  /* utilizar fr es muuuuuy util */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  /* propiedades de alineación */
+  justify-content: center;
+  align-content: center;
+
+  /* propiedades de los hijos */
+  /* justify-items: end;
+  align-items: center; */
+}
+
+.contenedor > div {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  background-color: #2f89fc;
+  box-shadow: 2px 2px 10px #00000040;
+}
+
+.contenedor .item {
+  background-color: orange;
+  /* grid-column: 1/-1; */
+  /* grid-row:2/4; */
+  /* grid-column: 1 /span 3; */
+}

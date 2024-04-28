@@ -1,0 +1,75 @@
+/*  Forma de uso
+    BEM = Bloque Elemento Modificador
+
+    Se usa siempre class, nunca ID (eso lo utilizamos para JavaScript)
+
+    Semantica:
+    .bloque
+    .bloque__elemento (doble guion bajo)
+    .bloque__elemento--modificador
+*/
+.centro {
+  text-align: center;
+}
+/* Forma con BEM */
+
+.cards {
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 5px;
+}
+.cards__card {
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  margin: 5px;
+  background-color: lightskyblue;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card__link {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+.card__readmore {
+  background-color: red;
+}
+.card__title--remarcado {
+  background-color: blueviolet;
+}
+
+/* Forma tradicional */
+
+/* Estilos Section */
+.cards {
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 5px;
+}
+
+/* Estilos a cada DIV*/
+.cards .card {
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  margin: 5px;
+  background-color: lightskyblue;
+}
+.cards .card h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards .card a {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}

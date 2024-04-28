@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mas o menos como el otro archivo css, pero esta vez con movil y monitor de escritorio. */
+body {
+  color: gainsboro;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: grid;
+  /* mobile first */
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    6.25rem
+    3rem
+    1fr
+    6.25rem
+    12.5rem;
+  grid-template-areas:
+    "mi-header"
+    "mi-nav"
+    "mi-main"
+    "mi-aside"
+    "mi-footer";
+  /* Aqui como queremos hacer una estructura en columna  */
+}
+header {
+  grid-area: mi-header;
+  background-color: cornflowerblue;
+}
+nav {
+  grid-area: mi-nav;
+  background-color: darkmagenta;
+}
+aside {
+  grid-area: mi-aside;
+  background-color: blueviolet;
+}
+
+main {
+  grid-area: mi-main;
+  background-color: indigo;
+}
+
+footer {
+  grid-area: mi-footer;
+  background-color: darkorchid;
+}
+@media screen and (min-width: 640px) {
+  body {
+    grid-template-columns: 12.5rem 1fr 12.5rem;
+    grid-template-rows:
+      9rem
+      6.25rem
+      1fr
+      6.25rem;
+    grid-template-areas:
+      "mi-header mi-header mi-header"
+      /* "mi-nav mi-nav mi-nav" */
+      /* para probar lo del punto descomenta/comenta lo de arriba y abajo */
+      "mi-nav mi-nav ."
+      "mi-aside mi-main mi-main"
+      "mi-footer mi-footer mi-footer";
+    /* si pongo un . en un area ese area no lo ocupo */
+  }
+}

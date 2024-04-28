@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicar BEM</title>
+  </head>
+  <body>
+    <h1>Ejercicios para practicar BEM</h1>
+    <!-- Ejercicio 1 -->
+    <nav class="menu-nav">
+      <ol class="menu-nav__list">
+        <li class="menu-nav__elemento">
+          <a class="menu-nav__link" href="#">Home</a>
+        </li>
+        <li class="menu-nav__elemento">
+          <a class="menu-nav__link" href="#">About</a>
+        </li>
+        <li class="menu-nav__elemento">
+          <a class="menu-nav__link" href="#">Vision</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Ejercicicio 2 -->
+    <a href="#" class="link">
+      <span class="link__cohete"> 🚀 </span>
+      <span class="link__mi-link">Mi link</span>
+      <span class="link__astronauta"> 👨‍🚀 </span>
+    </a>
+
+    <!-- Ejercicio 3 -->
+    <div class="input-group">
+      <label for="myInput" class="input-group__label">Label:</label>
+      <input type="text" id="myInput" class="input-group__input" />
+      <span class="input-group__help">
+        This is a help text. Could be a warning, too. For different colors you
+        should use modifier classes.
+      </span>
+    </div>
+
+    <!-- Ejercicio 4 -->
+    <main class="layout">
+      <section class="layout__portfolio">
+        <header class="portfolio__header">
+          <h1 class="portfolio__title"><span>Portafolio</span></h1>
+        </header>
+        <nav class="portfolio__nav">
+          <ul class="portfolio__unorder-list">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">Todo</a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">Cursos</a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">Redes Sociales</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="portfolio__contenido">
+          <figure class="contenido__figure">
+            <a href="#" class="contenido__link">
+              <img
+                src="./img/galeria-1.jpg"
+                class="contenido__imagen"
+                alt="Imagen de contenido"
+              />
+            </a>
+            <figcaption class="contenido__title">
+              Producción de vídeo
+            </figcaption>
+            <i class="contenido__icono"></i>
+            <span class="contenido__categoria">Vídeos</span>
+          </figure>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

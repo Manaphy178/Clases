@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-color: aquamarine;
+  margin: 6rem auto;
+  width: 40%;
+  color: black;
+  height: 6rem;
+  /* Hace que un cuadro de texto que tenga muchas lineas no se alargue mucho */
+  overflow: auto;
+}

@@ -1,0 +1,20 @@
+/* id > clase > elemento
+   ICE 🧊 */
+.bigger {
+  color: blue;
+}
+
+#special {
+  color: gold;
+}
+
+/* con important rompo las reglas de especificidad */
+p {
+  color: red !important;
+  font-size: 20px;
+}
+
+/* Cuidado con la cascada. Esta de abajo se pone la última */
+.bigger {
+  color: pink;
+}

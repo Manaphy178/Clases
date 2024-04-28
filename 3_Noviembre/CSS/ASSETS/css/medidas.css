@@ -1,0 +1,61 @@
+/* Ponemos medidas para el rem */
+/* html{
+  font-size: 10px;
+  background-color: black;
+  color: white;
+} */
+:root {
+  /* Tambien se puede utilizar la etiqueta :root, es lo mismo que poner html */
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+/* Hacer que el body sea igual de grande que el dispositivo en el que esta */
+body {
+  border: 1px solid #c219bc; /* Utilizamos RGB */
+  /* Se tiene que utilizar min-heigth para poder ocupar como minimo el 100% del dispositivo */
+  min-height: 100vh;
+  /*vh seria para los dispositivos, si ponemos un 100 seria el 100% del dispositivo*/
+}
+
+/*Ejemplos absolutas:
+Unidades absolutas, NO VARIAN
+No recomendable para font-size */
+p {
+  font-size: 32px;
+  border: 1px solid red;
+}
+
+/*Ejemplos Relativos:
+Unidades relativas, al utilizar em se multiplica el numero que hemos puesto por las medidas de la etiqueta padre
+Ej:
+<html font-size:10px>
+<section font-size:3em>
+Section tendra 30px (10px*3) */
+section {
+  /* Tamaño heredado del padre  */
+  /* font-size: 2em; */
+  font-size: 10px;
+}
+
+h2 {
+  /* Tamaño relativo al padre */
+  /* font-size: 2.5em;  */
+  /* Esto sin el section de arriba serian 10 px de la etiqueta HTML que son 10px */
+
+  /* rem coge las medidas de la etiqueta raiz, es decir, <html>
+  tambien se multiplica como el em, pero con la etiqueta raiz */
+  font-size: 1rem;
+
+  border: 1px solid red;
+  /* Porcentajes %:
+  Coge la longitud del padre el cual es Section*/
+  width: 50%;
+}
+
+.mitad {
+  /* Clase de Section */
+  /* Coge el 50% body o html */
+  width: 50%;
+}

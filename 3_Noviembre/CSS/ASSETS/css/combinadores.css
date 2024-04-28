@@ -1,0 +1,16 @@
+/* Cuando paso el puntero del raton por encima */
+h2:hover {
+  color: red;
+}
+
+/* cuando yo ponga el puntero del raton encima de un elemento, se resaltan todos los elementos iguales */
+h2:hover + p {
+  background-color: yellowgreen;
+}
+
+/* Cuando yo pase el puntero por un parrafo se marque la etiqueta "span" dentro del texto */
+p:hover > span {
+  background-color: gold;
+  color: white;
+  transition: 0.5s all;
+}

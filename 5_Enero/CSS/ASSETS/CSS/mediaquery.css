@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 15%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* el valor de un vh es un 1% del alto del area de visualizacion
+    Con esto estoy diciendo que me ocupe el 100% de la altura */
+}
+.box {
+  background-color: red;
+  padding: 20rem;
+}
+
+/* creamos las medias query */
+/* cuando la pantalla sea de 500px en adelante se pondra azul */
+@media screen and (min-width: 500px) {
+  .box {
+    background-color: blue;
+  }
+}

@@ -1,0 +1,26 @@
+a {
+  font-size: 20px;
+  text-decoration: none;
+}
+/* estilos cuando se pasa el raton por el enlace */
+a:hover {
+  background-color: #f9a03f;
+  color: #fff;
+}
+
+/* estilos a enlaces NO visitados */
+a:link {
+  text-decoration: none;
+  color: red;
+}
+
+/* estilos a enlaces ya visitados */
+a:visited {
+  color: #ccc;
+}
+
+/* estado del enlace cuando hagamos click sobre él */
+a:active {
+  color: pink;
+  text-decoration: underline;
+}

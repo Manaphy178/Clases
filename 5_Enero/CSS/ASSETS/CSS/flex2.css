@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  color: gray;
+}
+body {
+  padding: 2rem;
+  /* background-color: black; */
+}
+.padre {
+  /* border: 4px solid white; */
+  border: 4px solid black;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/*Propiedades de los hijos */
+
+.item {
+  border: 1px solid red;
+  opacity: 0.9;
+  /* width: 50px; */
+  height: 100px;
+
+  /* VALORES POR DEFECTO */
+  /* los elementos NO crecen */
+  flex-grow: 0;
+
+  /* Los elementos pueden reducir su tamaño mas que pequeño que flex-basis */
+  flex-shrink: 1;
+
+  /* Los elementos tienen un tamaño base en auto */
+  flex-basis: auto;
+
+  /* Esto es equivalente a escribir esto */
+  /* flex:initial; */
+}
+
+.item:first-child {
+  background-color: yellow;
+  flex-grow: 2;
+  /* De todo el espacio del padre reserva el doble */
+}
+
+.item:nth-child(2) {
+  background-color: red;
+  flex-grow: 2;
+}
+
+.item:nth-child(3) {
+  background-color: blue;
+  flex-basis: 100%;
+  /* Ocupa el 100% del ancho del padre */
+}
+
+.item2 {
+  border: 1px solid red;
+  opacity: 0.9;
+  /* width: 50px; */
+  height: 100px;
+  /* VALORES QUE SE AJUSTAN AL CONTENIDO */
+  /* los elementos SI crecen */
+  flex-grow: 1;
+  /* Al poner un 1 se ajusta automaticamente al contenido
+  No se hace simetrico, si uno tiene mas contenido, este va a tener mas espacio */
+
+  /* Los elementos pueden reducir su tamaño mas que pequeño que flex-basis */
+  flex-shrink: 1;
+
+  /* Los elementos tienen un tamaño base en auto */
+  flex-basis: auto;
+}
+.item2:first-child {
+  background-color: yellow;
+  /* flex-grow: 2; */
+  /* De todo el espacio del padre reserva el doble */
+}
+.item2:nth-child(2) {
+  background-color: red;
+  /* flex-grow: 2; */
+}
+.item2:nth-child(3) {
+  background-color: blue;
+  /* flex-basis: 100%; */
+  /* Ocupa el 100% del ancho del padre */
+}
+.item3 {
+  border: 1px solid red;
+  opacity: 0.9;
+  /* width: 50px; */
+  height: 100px;
+
+  /* VALORES QUE TIENEN EL MISMO ANCHO  */
+  /* los elementos SI crecen */
+  flex-grow: 1;
+
+  /* Los elementos pueden reducir su tamaño mas que pequeño que flex-basis */
+  flex-shrink: 1;
+
+  /* Los elementos tienen un tamaño base en auto */
+  flex-basis: 0;
+  /* Se reparten los espacios equitativamente entre los elementos sin tener en cuenta el contenido */
+
+  /* Estos 3 equivalen a esto */
+  /* flex:1; */
+}
+.item3:first-child {
+  background-color: yellow;
+  /* flex-grow: 2; */
+  /* De todo el espacio del padre reserva el doble */
+}
+.item3:nth-child(2) {
+  background-color: red;
+  /* flex-grow: 2; */
+}
+.item3:nth-child(3) {
+  background-color: blue;
+  /* flex-basis: 100%; */
+  /* Ocupa el 100% del ancho del padre */
+}

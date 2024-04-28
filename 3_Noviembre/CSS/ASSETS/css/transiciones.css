@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* velocidad de la curva
+
+    esase - inicio lento, despues rápido, y termina lento
+    linear - misma vel inicio a fin
+    ease-in - inicio lento
+    ease-out - termina lento
+    ease-in-out - inicio lento y fianl lento
+    
+
+*/
+
+.caja3 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin: 10rem auto;
+  transition: all 0.3s;
+}
+
+.caja3:hover {
+  background-color: purple;
+  width: 400px;
+  border: 1px solid green;
+  border-radius: 1rem;
+  rotate: 180deg;
+}
