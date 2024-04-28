@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20rem;
+  min-height: 100vh;
+}
+section div {
+  border: 1px solid black;
+  opacity: 0.9;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  box-shadow: 0 0 5px #000000dd;
+  font-weight: bold;
+  position: relative;
+}
+/* Todos los elementos que queramos que tengan z-index necesitan tener una posicion determinada */
+/* Cuando el numero sea mas grande en el z-index mas por delante se va a ver */
+.uno {
+  background-color: yellow;
+  z-index: 3;
+}
+.dos {
+  background-color: blue;
+  color: white;
+  z-index: 2;
+}
+.tres {
+  background-color: red;
+  color: white;
+  z-index: 1;
+}
+.fixed {
+  background-color: green;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}

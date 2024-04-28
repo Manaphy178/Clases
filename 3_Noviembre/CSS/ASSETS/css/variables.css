@@ -1,0 +1,20 @@
+/* Creacion de variables .|. <- pito*/
+/* Se meten dentro de la raiz las variables */
+:root {
+  /* --color-uno: #424874; */
+  /* Para hacerlo mas rapido podemos cambiar el color de la variable desde aqui rapidamente por si tenemos muchisimos elementos */
+  --color-uno: #283cd4;
+  --color-dos: #70161e;
+  --color-tres: #00e8fc;
+}
+
+/* Estilos principales */
+h1 {
+  color: var(--color-uno);
+}
+h2 {
+  color: var(--color-dos);
+}
+h3 {
+  color: var(--color-tres);
+}

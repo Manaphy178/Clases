@@ -1,0 +1,50 @@
+/* Importando url de fuente */
+/* Para importar se necesita utilizar @import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Si ponemos muchas fuentes esto hara que si no se carga una se intentara cargar la siguiente */
+/* El orden indica la preferencia de fuente */
+/* Ejemplo de coger fuente de Google fonts */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Vinculamos fuente descargada */
+/* Para vincular una fuente descargada en nuestro equipo utilizamos @font-faces */
+@font-face {
+  font-family: fuentePersonalizada; /*Ponemos el nombre que nos de la gana y despues la llamaremos en el font-family que queramos*/
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+/* Ejemplo de fuente descargada */
+/* Pongo mas fuentes por si esa no carga */
+h1 {
+  /* Fuente descargada */
+  font-family: fuentePersonalizada, "Roboto", sans-serif;
+
+  /* Tamaño de la letra */
+  font-size: 20px;
+
+  /* Estilo de la fuente */
+  font-style: italic;
+
+  /* Color al texto */
+  color: deepskyblue;
+
+  /* Alineacion del texto */
+  text-align: center;
+
+  /* Subrayado del texto */
+  text-decoration: underline;
+
+  /* Poner todo en mayusculas */
+  text-transform: uppercase;
+
+  /* Espacio entre letras */
+  letter-spacing: 10px;
+
+  /* Interlineado */
+  line-height: 40px;
+}

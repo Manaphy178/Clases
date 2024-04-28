@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+  margin: 0 auto;
+  min-height: 200vh;
+  /* ^ Esto se utiliza para algunos ejemplos como el absolute y el fixed */
+}
+
+div {
+  padding: 2rem;
+  color: whitesmoke;
+}
+
+.father {
+  border: 1px solid red;
+  /* Para el ejemplo del Absolute se le pondra una posicion relative */
+  position: relative;
+  /* Al tener un padre con posicion relative el Absolute se mantendra dentro del padre */
+  min-height: 200vh;
+}
+
+.static {
+  background-color: magenta;
+  /* Da igual ponerlo o no, todos los elementos son static */
+  position: static;
+}
+
+.relative {
+  background-color: blue;
+  /* Guarda el flujo del programa. Puedes mover el cuadro de texto u elemento con top, bottom, left y rigth */
+  position: relative;
+  top: 10px;
+  right: 10px;
+  bottom: 25px;
+  left: 20px;
+}
+
+.absolute {
+  background-color: red;
+  position: absolute;
+  /* Se sale del flujo del html (el orden del html) sin depender de alguien. Ocupan un espacio propio que le ponemos nosotros */
+  /* top: 0px;*/
+  /* Se ha ido para arriba de la pagina, saliendose del padre */
+  bottom: 0px;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  /* Se queda fijo en un lugar determinado en la pagina */
+  /* No depende de ningun padre, se posiciona respecto a la raiz, la pagina principal en sí */
+  bottom: 0px;
+  right: 0px;
+}
+
+.sticky {
+  background-color: orange;
+  /* Sticky depende de un padre, este hace que se quede en un sitio definido del padre */
+  position: sticky; /*Pegajoso / CUM*/
+  /* Se le tiene que definir una posicion */
+  top: 0px;
+}

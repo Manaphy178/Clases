@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML demostrativo de tablas" />
+    <link rel="stylesheet" href="ASSETS/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/img/favicon2.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Tablas</title>
+  </head>
+  <body>
+    <h1>Tablas</h1>
+    <!-- Table para crear una tabla -->
+    <table border="1">
+      <!-- tr para hacer una fila en la tabla -->
+      <tr>
+        <!-- th es el header, lo que va a determinar cada cosa de la tabla -->
+        <th>Fruta</th>
+        <th>Color</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <!-- td es para añadir datos en la misma fila de la tabla -->
+        <td>Platano 🍌</td>
+        <td>Amarillo</td>
+        <td>1€</td>
+      </tr>
+      <tr>
+        <td>Kiwi 🥝</td>
+        <td>Verde</td>
+        <td>4€</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table border="1">
+      <tr>
+        <th>Producto</th>
+        <!-- Colspan sirve para invadir o fusionar otras celdas en columna (horizontalmente), ya que hay 2 headers y 3 datos en la tabla -->
+        <th colspan="2">Cantidad</th>
+      </tr>
+      <tr>
+        <!-- Rowspan sirve para invadir o fusionar otras celdas en filas (verticalmente), asi podemos hacer que un solo producto pueda tener mas de una fila de cantidad y precio -->
+        <td rowspan="2">Tomates🍅</td>
+        <td>4</td>
+        <td>0.8€</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0.48€</td>
+      </tr>
+    </table>
+  </body>
+</html>

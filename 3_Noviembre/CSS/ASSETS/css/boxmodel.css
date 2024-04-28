@@ -1,0 +1,35 @@
+/* Metemos las variables en el root */
+:root {
+  --color-uno: #545454;
+  --color-dos: #c9ddff;
+  --color-tres: #7ae7c7;
+  --colorBorde: pink;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+.abuelo {
+  background-color: var(--color-uno);
+  color: var(--color-dos);
+  /* border-width: 2px;
+  border-style: dotted;
+  border-color: var(--colorBorde); */
+
+  /* Poniendo esto podremos hacer las ediciones directamente sin tener que hacer como las cosas de arriba */
+
+  border: 2px dotted var(--colorBorde);
+  padding: 0.625em;
+  width: 300px;
+}
+
+.abascal {
+  width: 250px;
+  height: 200px;
+}

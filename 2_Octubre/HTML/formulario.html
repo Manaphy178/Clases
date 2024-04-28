@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejemplo de formularios" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="ASSETS/css/style.css" />
+    <title>HTML | Forms</title>
+  </head>
+  <body>
+    <!-- Para introducir un formulario, una interracion con el usuario se hace con form, method es el metodo en el que se transmite -->
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <!-- Añadiendo input text -->
+          <!-- En la etiqueta for hay que poner el valor id del input -->
+          <label for="userName">Nombre: </label>
+
+          <!-- Name es como va a identificar este campo y como lo va a recibir el servidor -->
+          <!-- ID es un identificador unico para el servidor -->
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Nombre del usuario"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Añadiendo tipo number -->
+        <div>
+          <label for="number">Cantidad: </label>
+          <input
+            type="number"
+            name="cantidad"
+            id="number"
+            placeholder="Nº"
+            min="1"
+            max="5"
+          />
+        </div>
+
+        <!-- Añadimos input de telefono -->
+        <div>
+          <label for="tlf">Telefono: </label>
+          <input
+            type="tel"
+            name="telefono"
+            id="tlf"
+            placeholder="Telefono"
+            pattern="[0-9]{9}"
+          />
+        </div>
+
+        <!-- añadimos input de password -->
+        <div>
+          <label for="pass">Contraseña: </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Tu contraseña"
+            id="pass"
+          />
+        </div>
+
+        <!-- Añadimos input mail -->
+        <div>
+          <label for="mail">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="Dame tu correo"
+          />
+        </div>
+        <!-- Añadimos un select -->
+        <div>
+          <label for="paises">País: </label>
+          <select name="paises" id="paises">
+            <!--Select te mostrara una lista de cosas que podras elegir y enviara al servidor  -->
+            <option value="spain">España</option>
+            <option value="vzla">Venezuela</option>
+            <option value="usa">Estados Unidos</option>
+            <option value="uk">Reino Unido</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pokemons</legend>
+        <!-- Añadimos Checkbox -->
+        <input type="checkbox" name="pokemon" id="pokemon1" value="Cinderace" />
+        <label for="pokemon1">Cinderace</label>
+        <input type="checkbox" name="pokemon" id="pokemon2" value="Manaphy" />
+        <label for="pokemon2">Manaphy</label>
+        <input type="checkbox" name="pokemon" id="pokemon3" value="Infernape" />
+        <label for="pokemon3">Infernape</label>
+        <input type="checkbox" name="pokemon" id="pokemon4" value="Lucario" />
+        <label for="pokemon4">Lucario</label>
+        <input type="checkbox" name="pokemon" id="pokemon5" value="Garchomp" />
+        <label for="pokemon5">Garchomp</label>
+      </fieldset>
+
+      <fieldset>
+        <!-- Añadimos un radio -->
+        <legend>Equipo Favorito</legend>
+        <!-- Value es lo que va a recibir el servidor -->
+        <input type="radio" name="equipo" id="madrid" value="Real Madrid" />
+        <label for="madrid">Real Madrid</label>
+        <input type="radio" name="equipo" id="barça" value="Barcelona" />
+        <label for="barça">Barcelona</label>
+        <input type="radio" name="equipo" id="rayo" value="Rayo Vallecano" />
+        <label for="rayo">Rayito</label>
+      </fieldset>
+
+      <!-- Boton de enviar -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

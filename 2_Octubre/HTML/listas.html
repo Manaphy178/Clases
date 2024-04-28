@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demostracion listas en HTML" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/img/favicon2.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="ASSETS/css/style.css" />
+    <title>HTML | Listas</title>
+  </head>
+  <body>
+    <h2>Listas ordenados</h2>
+
+    <!--Order list / Listas ordenadas. Seran con numeros-->
+
+    <ol>
+      <li>Hyundai</li>
+      <li>Ferrari</li>
+      <li>Mercedes</li>
+    </ol>
+
+    <!-- Con start empezara en el numero 10 -->
+
+    <ol start="10">
+      <li>Hyundai</li>
+      <li>Ferrari</li>
+      <li>Mercedes</li>
+    </ol>
+
+    <!-- Para ordenacion alfabetica -->
+
+    <ol type="A">
+      <li>Hyundai</li>
+      <!-- Tambien se pueden hacer sublistas en listas -->
+      <li>Ferrari</li>
+      <ol>
+        <li>Ibiza</li>
+        <li>Leon</li>
+        <li>Altea</li>
+      </ol>
+      <li>Mercedes</li>
+    </ol>
+
+    <hr />
+
+    <h2>Bebidas | Listas desordenadas</h2>
+
+    <!-- Unorder list / Listas desordenadas. Seran con puntos -->
+
+    <ul>
+      <li>Agua</li>
+      <li>Agua con gas</li>
+      <li>Zumito</li>
+    </ul>
+
+    <!-- Para cambiar el estilo del punto, con circle haria un circulo en blanco, pero tambien se pueden quitar los puntos con none -->
+
+    <ul style="list-style: none">
+      <li>Agua</li>
+      <li>Agua con gas</li>
+      <li>Zumito</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+p {
+  color: white;
+}
+.caja1 {
+  background-color: #1420db;
+  width: 200px;
+  height: 200px;
+  margin: 10rem auto;
+
+  animation-name: colores;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: movement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+  /* shorthand SE SEPARA POR COMAS */
+  animation: movement 5s ease infinite, colores 5s ease infinite;
+}
+
+@keyframes colores {
+  /* from {background-color: #1420DB ;}
+    to {background-color: #2DA2E7 ;} */
+
+  0% {
+    background-color: #2da2e7;
+  }
+
+  25% {
+    background-color: #5420b6;
+  }
+  50% {
+    background-color: #0a0511;
+  }
+  75% {
+    background-color: #e3e7ff;
+  }
+  100% {
+    background-color: #1420db;
+  }
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(500px);
+    border-radius: 10rem;
+  }
+  100% {
+    transform: translate(0px);
+  }
+}

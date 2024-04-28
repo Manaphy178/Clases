@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ASSETS/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/img/favicon2.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Imagenes que se modifican segun dispositivo (resolucion)"
+    />
+    <title>HTML | Imagenes Resposive</title>
+  </head>
+  <body>
+    <!-- Vamos a crear imagenes responsive con html -->
+    <img
+      src="ASSETS/img/arbol.jpg"
+      alt="Imagen de arbol frondoso en bosque elfico"
+      srcset="
+        ./ASSETS/img/arbol_small.jpg  640w,
+        ./ASSETS/img/arbol_mid.jpg   1920w,
+        ./ASSETS/img/arbol_big.jpg   5760w
+      "
+      sizes=" 
+        (max_width: 400px) 300px,
+        (max_width: 1200px) 1000px,
+        (max_width: 3000px) 5000px
+      "
+    />
+    <!-- srcset indica conjunto de archivos que puede elegir el navegador. Necesita meta="viewport" para funcionar -->
+    <!-- Sizes nos permite definir condiciones mas precisa que tiene que seguir el navegador para elegir que imagen mostrar -->
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* Selector de elemento */
+html {
+  background-color: black;
+}
+article {
+  color: brown;
+}
+p {
+  color: yellow;
+}
+h2 {
+  color: blue;
+}
+span {
+  color: red;
+  text-decoration: double;
+}
+a[href="http://www.google.es"]
+{
+  color: purple;
+}
+a[class] {
+  color: olive;
+}
+/* Selector de clase */
+.bigger {
+  font-size: 25px;
+}
+/* Selector de id */
+#favorito {
+  color: gold;
+}
