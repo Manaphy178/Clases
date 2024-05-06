@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.formularioCompleto {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #a6c7cade;
+  box-shadow: 0rem 0rem 10rem white;
+}
+.error-text {
+  color: #ca3434;
+  display: flex;
+}
+.no-error-text {
+  display: none;
+}

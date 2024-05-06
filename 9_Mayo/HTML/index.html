@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ASSETS/CSS/style.css" />
+    <script defer src="./ASSETS/JS/main.js"></script>
+    <title>Validar Formularios</title>
+  </head>
+  <body>
+    <main>
+      <form
+        action="#"
+        method="get"
+        class="formularioCompleto"
+        id="formularioCompleto"
+      >
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Inserte el nombre"
+          required
+        />
+
+        <small id="errorNombre" class="no-error-text">Nombre incorrecto</small>
+
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Inserte su contraseña"
+          required
+        />
+
+        <small id="errorPass" class="no-error-text"
+          >Contraseña incorrecta</small
+        >
+
+        <div>
+          <label for="genero">
+            <input type="radio" name="genero" value="F" checked /> Femenino
+            <input type="radio" name="genero" value="M" /> Masculino
+          </label>
+        </div>
+        
+        <input type="submit" value="Enviar" id="btn-submit" />
+      </form>
+    </main>
+  </body>
+</html>
