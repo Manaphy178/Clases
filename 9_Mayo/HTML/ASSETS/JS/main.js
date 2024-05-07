@@ -43,7 +43,7 @@ function validar(event) {
     errorPass.classList.remove("no-error-text");
     errorPass.classList.add("error-text");
   }
-  
+
   // Añadimos al array el genero
   datosUser.push(genero);
   // Vemos el array a modo de ejemplo
